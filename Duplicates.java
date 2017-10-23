@@ -1,9 +1,15 @@
 package practice;
 
+import java.util.Scanner;
+
 public class Duplicates{
 	private void findDuplicate() {
 		// TODO Auto-generated method stub
-		int arr[]= {1,2,1,3,4,5,4,6,6};
+			int arr[]=new int[5];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<5;i++) {
+			arr[i]=sc.nextInt();
+		}
 		
 		for(int i=0;i<arr.length;i++) {
 			outerloop:
@@ -14,6 +20,7 @@ public class Duplicates{
 				}
 			}
 		}
+		
 		
 	}
 public static void main(String args[]) {
